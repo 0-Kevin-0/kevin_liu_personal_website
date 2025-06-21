@@ -4734,3 +4734,44 @@ h6,
 .h6 {
     line-height: var(--vspace-0_625) !important;
 }
+
+@media screen and (max-width: 768px) {
+
+    /* 当用户点击（触发悬停）时，让浮层和信息出现 */
+    .project-swiper .slide-content:hover::before,
+    .project-swiper .slide-content:hover .entry__info {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* 重新设计信息框 .entry__info */
+    .project-swiper .entry__info {
+        width: 88%; /* 宽度占父容器的88%，左右留出边距 */
+        max-height: 80%; /* 最大高度不超过父容器的80% */
+        overflow-y: auto; /* 当内容超出最大高度时，出现垂直滚动条 */
+        -webkit-overflow-scrolling: touch; /* 在iOS上提供更流畅的滚动体验 */
+        
+        padding: 2rem; /* 增加内边距，让文字和边框有呼吸空间 */
+        background-color: rgba(20, 20, 20, 0.85); /* 给信息框一个半透明背景，确保文字清晰 */
+        backdrop-filter: blur(5px); /* （可选）增加流行的毛玻璃效果 */
+        border-radius: 8px; /* 圆角 */
+
+        /* 覆盖掉绝对居中的动画，改为从中间柔和浮现 */
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    /* 优化标题样式 */
+    .project-swiper .entry__title {
+        font-size: var(--text-md); /* 调整标题字体大小 */
+        text-align: left; /* 左对齐 */
+        color: var(--color-white); /* 确保是白色 */
+    }
+
+    /* 优化描述文字样式 */
+    .project-swiper .entry__cat {
+        font-size: var(--text-sm); /* 调整描述文字大小 */
+        line-height: 1.6; /* 增加行高，提高可读性 */
+        text-align: left; /* 左对齐 */
+        color: var(--color-gray-11); /* 确保是清晰的浅灰色 */
+    }
+}
