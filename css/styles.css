@@ -4159,7 +4159,7 @@ td:last-child {
 }
 .work-gallery-container {
     width: 100%;
-    /* margin-bottom: var(--vspace-2); Space between project galleries */
+    margin-bottom: var(--vspace-2); /* Space between project galleries */
     position: relative;
 }
 
@@ -4316,6 +4316,17 @@ td:last-child {
     .work-gallery-container:hover .swiper-button-next,
     .work-gallery-container:hover .swiper-button-prev {
         opacity: 0.6; /* Make them slightly transparent on mobile so they don't block content */
+    }
+
+    .s-about__experience-item h6 {
+        flex-direction: column !important; /* 将Flex容器的方向改为垂直，让子项堆叠 */
+        align-items: flex-start !important; /* 让子项在左侧对齐 */
+        gap: 0.25rem !important; /* 在学位和学校名称之间添加一点垂直间距 */
+    }
+    
+    .s-about__experience-item h6 > span:last-child {
+        white-space: normal !important; /* 允许学校名称的文本可以正常换行 */
+        text-align: left !important; /* 确保文本左对齐 */
     }
 }
 
