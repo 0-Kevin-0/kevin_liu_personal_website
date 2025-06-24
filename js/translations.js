@@ -153,7 +153,7 @@ const translations = {
       // ... add ALL other keys here
       attributes: {
         cvLink: "/Files/刘沁隆-V2CV.pdf", 
-        vrVideoLink: "https://player.bilibili.com/player.html?isOutside=true&aid=114629506302035&bvid=BV1S9TxzoEbZ&cid=30330913466&p=1" 
+        vrVideoLink: "https://player.bilibili.com/player.html?isOutside=true&aid=114629506302035&bvid=BV1S9TxzoEbZ&cid=30330913466&p=1&autoplay=0" 
       }
     }
   };

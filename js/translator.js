@@ -25,9 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   
       // 更新VR游戏视频链接 (iframe的src)
-      const vrVideoIframe = document.getElementById('vr-video-iframe');
-      if (vrVideoIframe && attributes.vrVideoLink) {
-        vrVideoIframe.setAttribute('src', attributes.vrVideoLink);
+      const vrVideoIframes = document.querySelectorAll('.vr-video-iframe');
+      // 遍历找到的所有 iframe 元素
+      if (vrVideoIframes.length > 0 && attributes.vrVideoLink) {
+          vrVideoIframes.forEach(iframe => {
+              // 为每一个 iframe 更新 src 链接
+              iframe.setAttribute('src', attributes.vrVideoLink);
+          });
       }
     }
   };
