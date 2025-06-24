@@ -64,10 +64,11 @@
 
                 <nav class="s-header__nav">    
                     <ul class="s-header__menu-links">
-                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
-                        <li><a class="smoothscroll" href="#about">About</a></li>
-                        <li><a class="smoothscroll" href="#works">Works</a></li>
-                        <li><a class="smoothscroll" href="#footer">Contact</a></li>
+                        <li class="current"><a class="smoothscroll" href="#intro" data-key="navIntro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#about" data-key="navAbout">About</a></li>
+                        <li><a class="smoothscroll" href="#works" data-key="navWorks">Works</a></li>
+                        <li><a class="smoothscroll" href="#footer" data-key="navContact">Contact</a></li>
+                        <li><a href="#0" id="lang-switcher">中文</a></li> 
                     </ul> <!-- s-header__menu-links -->    
                 </nav> <!-- end s-header__nav -->
 
@@ -84,16 +85,16 @@
                     
                     <div class="s-intro__content-text">
 
-                        <div class="s-intro__content-pretitle text-pretitle">Hello</div>
-                        <h1 class="s-intro__content-title">
+                        <div class="s-intro__content-pretitle text-pretitle" data-key="introHello">Hello</div>
+                        <h1 class="s-intro__content-title" data-key="introTitle">
                         I'm Kevin Liu <br>
                         a UX Designer <br>
-                        base in Sydney.
+                        based in Sydney.
                         </h1>                            
 
                         <div class="s-intro__content-btns">
-                            <a class="smoothscroll btn" href="#about">More About Me</a>
-                            <a class="smoothscroll btn btn--stroke" href="#footer">Get In Touch</a>
+                            <a class="smoothscroll btn" href="#about" data-key="introBtnMore">More About Me</a>
+                            <a class="smoothscroll btn btn--stroke" href="#footer" data-key="introBtnContact">Get In Touch</a>
                         </div> <!-- s-intro__content-btns -->   
 
                     </div> <!-- s-intro__content-text -->                     
@@ -139,7 +140,7 @@
             </div> <!-- s-intro__content-media -->                
 
             <div class="s-intro__btn-download">
-                <a class="btn btn--stroke" href="Files/Kevin-CV-VR.pdf" download>Get My CV</a>
+                <a id="cv-download-link-intro" class="btn btn--stroke" href="Files/Kevin-CV-VR.pdf" download data-key="BtnDownloadCV">Get My CV</a>
             </div> <!-- end s-intro__btn-download -->
             
             <div class="s-intro__scroll-down">
@@ -162,21 +163,21 @@
                 <div class="column xl-12">    
                     
                     <div class="section-header" data-num="01">
-                        <h2 class="text-display-title">About Me.</h2>
+                        <h2 class="text-display-title" data-key="aboutTitle" data-key="aboutTitle">About Me.</h2>
                     </div> <!-- end section-header -->
 
-                    <p class="attention-getter">
+                    <p class="attention-getter" data-key="aboutLead">
                         A UX/UI designer with an interdisciplinary background in landscape design, product interaction, programming, and VR development. Skilled in logical thinking and user-centered research, focus on balancing data-driven decisions with emotional experience. Experienced in both large-scale real-world projects and independent digital design. Passionate about shaping future mobility and intelligent cockpit experiences through the fusion of design and technology.                    </p>
             
                         <div class="row s-about__content-block">
                             <div class="column xl-12">
                         
-                                <h4 class="s-about__block-title">Educational Experience</h4>
+                                <h4 class="s-about__block-title" data-key="aboutEducational">Educational Experience</h4>
                         
                                 <div class="s-about__experience-item">
                                     <h6 style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
         
-                                        <span style="color: #141414;">Master of Computer Science</span>
+                                        <span style="color: #141414;" data-key="aboutMaster">Master of Computer Science</span>
                                         
                                         <span style="display: flex; align-items: center; white-space: nowrap;">
                                             <svg id="USYD" data-name="USYD" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.88 52" style="width: 28px; vertical-align: middle; margin-right: 8px;">
@@ -186,16 +187,16 @@
                                             @ The University of Sydney
                                         </span>
                                     </h6>                                    
-                                    <p><em>Expected 2026</em></p>
+                                    <p><em data-key="aboutUSYDExpected">Expected 2026</em></p>
                                     <ul>
-                                        <li>Relevant Coursework: JAVA, Interaction Design, Data Structure Algorithm, Data Visualisation, Database. </li>
-                                        <li>Received the Vice Chancellor's Global Mobility Scholarship. </li>
+                                        <li data-key="aboutUSYDRelevant">Relevant Coursework: JAVA, Interaction Design, Data Structure Algorithm, Data Visualisation, Database. </li>
+                                        <li data-key="aboutUSYDScholarship">Received the Vice Chancellor's Global Mobility Scholarship. </li>
                                     </ul>
                                 </div>
                         
                                 <div class="s-about__experience-item">
                                     <h6 style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                                        <span style="color: #141414;">Exchange Program, Human-Computer Interaction</span>
+                                        <span style="color: #141414;" data-key="aboutTAMUExchange">Exchange Program, Human-Computer Interaction</span>
                                         <span style="display: flex; align-items: center; white-space: nowrap;">
                                             <svg id="TAMU" data-name="TAMU" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 635" style="width: 28px;margin-right: 8px;">
                                                 <defs><style>.TAMU-cls-1{fill:#500000;}.TAMU-cls-2{fill:#fff;}.TAMU-cls-3{fill:#b1b3b6;}</style></defs>
@@ -213,14 +214,14 @@
                                     </h6>      
                                     <p><em>05.2025</em></p>
                                     <ul>
-                                        <li>Relevant Coursework: VR Development, Materials and Rendering, Machine Learning. </li>
+                                        <li data-key="aboutTAMURelevant">Relevant Coursework: VR Development, Materials and Rendering, Machine Learning.</li>
                                     </ul>
                                 </div>
 
                                 <div class="s-about__experience-item">
                                     <h6 style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
         
-                                        <span style="color: #141414;">Bachelor of Landscape Architecture</span>
+                                        <span style="color: #141414;" data-key="aboutCSUFTBachelor">Bachelor of Landscape Architecture</span>
                                         
                                         <span style="display: flex; align-items: center; white-space: nowrap;">
                                             <img src="images/Central_South_University_of_Forestry_and_Technology_logo.png" alt="School Logo" style="width: 28px; margin-right: 8px; vertical-align: middle; transform: translateY(16px);">
@@ -229,15 +230,15 @@
                                     </h6>
                                     <p style="transform: translateY(-13px);"><em>2022</em></p>
                                     <ul style="transform: translateY(-11px);">
-                                        <li>Received University-level Scholarship, University-level Excellent Class Officer. </li>
+                                        <li data-key="aboutCSUFReceived">Received University-level Scholarship, University-level Excellent Class Officer. </li>
                                     </ul>
                                 </div>
 
-                                <h4 class="s-about__block-title">Professional Experience</h4>
+                                <h4 class="s-about__block-title" data-key="aboutProfessional">Professional Experience</h4>
                         
                                 <div class="s-about__experience-item">
                                     <h6 style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                                        <span style="color: #141414;">UX Designer (Internship)</span>
+                                        <span style="color: #141414;" data-key="aboutLenovoUX">UX Designer (Internship)</span>
                                         <span style="display: flex; align-items: center; white-space: nowrap;">
                                             <svg id="lenovo" data-name="lenovo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2498.99 833" style="width: 70px; margin-right: 8px;">
                                                 <defs><style>.Lenovo-cls-1{fill:#e22319;}</style></defs>
@@ -250,16 +251,16 @@
                                         </span>
                                     </h6>
                                     <p><em>05.2025 - 08.2025</em></p>
-                                    <ul>
-                                        <li><strong>Al-Powered Bespoke UI</strong>: Contributed to 0-1 project initiation, collaborating with UX researchers to design interview workflows and conducting 15 user sessions. </li>
-                                        <li><strong>Next-Gen Cross-Device Notes APP</strong>: Supported redesign efforts by analyzing 4 competitors, surveying 200+ users, and collaborating with the product team to optimize the PRD, increasing the requirement approval rate by 30%. </li>
-                                        <li><strong>Stylus Iteration</strong>: Participated in 2nd-gen stylus research, refining methodologies with the UX team and synthesizing 30+ user feedbacks into actionable designs. </li>
+                                    <ul >
+                                        <li data-key="aboutLenovoExperience1"><strong >Al-Powered Bespoke UI</strong>: Contributed to 0-1 project initiation, collaborating with UX researchers to design interview workflows and conducting 15 user sessions. </li>
+                                        <li data-key="aboutLenovoExperience2"><strong >Next-Gen Cross-Device Notes APP</strong>: Supported redesign efforts by analyzing 4 competitors, surveying 200+ users, and collaborating with the product team to optimize the PRD, increasing the requirement approval rate by 30%. </li>
+                                        <li data-key="aboutLenovoExperience3"><strong >Stylus Iteration</strong>: Participated in 2nd-gen stylus research, refining methodologies with the UX team and synthesizing 30+ user feedbacks into actionable designs. </li>
                                     </ul>
                                 </div>
                         
                                 <div class="s-about__experience-item">
                                     <h6 style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                                        <span style="color: #141414;">Landscape Architect (Full Time)</span>
+                                        <span style="color: #141414;" data-key="aboutBYDArchitect">Landscape Architect (Full Time)</span>
                                         <span style="display: flex; align-items: center; white-space: nowrap;">
                                             <svg id="BYD" data-name="BYD" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 968.88 186.6" style="width: 70px; margin-right: 8px;">
                                                 <defs><style>.BYD-cls-1{fill:#1d1d1b;}</style></defs>
@@ -272,43 +273,43 @@
                                         </span>
                                     </h6>
                                     <p><em>07.2022 - 09.2023</em></p>
-                                    <ul>
-                                        <li>Led the full process for two sub-projects for Changsha Children's Park, which were implemented and are under construction. </li>
-                                        <li>Supported the conceptual design and modeling for three projects, including headquarters design. </li>
-                                        <li>Optimized the logic of key bidding materials, increasing internal review efficiency by 30% and the scheme approval rate by 25%. </li>
-                                        <li>Delivered 5 standardized design documents by integrating Rhino/Lumion modeling with user needs analysis in a cross-functional collaboration. </li>
+                                    <ul >
+                                        <li data-key="aboutBYDExperience1">Led the full process for two sub-projects for Changsha Children's Park, which were implemented and are under construction. </li>
+                                        <li data-key="aboutBYDExperience2">Supported the conceptual design and modeling for three projects, including headquarters design. </li>
+                                        <li data-key="aboutBYDExperience3">Optimized the logic of key bidding materials, increasing internal review efficiency by 30% and the scheme approval rate by 25%. </li>
+                                        <li data-key="aboutBYDExperience4">Delivered 5 standardized design documents by integrating Rhino/Lumion modeling with user needs analysis in a cross-functional collaboration. </li>
                                     </ul>
                                 </div>
                                 
-                                <h4 class="s-about__block-title">Extracurricular Experience</h4>
+                                <h4 class="s-about__block-title" data-key="aboutExtracurricular">Extracurricular Experience</h4>
 
                                 <div class="s-about__experience-item">
                                     <h6 style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
         
-                                        <span style="color: #141414;">UI Designer</span>
+                                        <span style="color: #141414;" data-key="aboutSIRIUI">UI Designer</span>
                                         
                                         <span style="display: flex; align-items: center; white-space: nowrap;">
                                             @ Sydney Interplanetary Rover Initiative
                                         </span>
                                     </h6>
                                     <p><em>12.2024 - 04.2025</em></p>
-                                    <ul>
-                                        <li>Designed 2 interface systems for the robotics R&D team (user website + lunar rover internal detection system) and created responsive UI designs with Figma. </li>
-                                        <li>Aligned weekly with the development team to ensure visual specs matched technical implementation, delivering 3 interactive prototype documents. </li>
+                                    <ul >
+                                        <li data-key="aboutSIRIExperience1">Designed 2 interface systems for the robotics R&D team (user website + lunar rover internal detection system) and created responsive UI designs with Figma. </li>
+                                        <li data-key="aboutSIRIExperience2">Aligned weekly with the development team to ensure visual specs matched technical implementation, delivering 3 interactive prototype documents. </li>
                                     </ul>
                                 </div>
 
                                 <div class="s-about__experience-item">
                                     <h6 style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
         
-                                        <span style="color: #141414;">Coordinator</span>
+                                        <span style="color: #141414;" data-key="aboutCSUFTAACoordinator">Coordinator</span>
                                         
                                         <span style="display: flex; align-items: center; white-space: nowrap;">
                                             @ Alumni Association, Central South University of Forestry and Technology
                                         </span>
                                     </h6>
                                     <p><em>2019 - 2021</em></p>
-                                    <ul>
+                                    <ul data-key="aboutCSUFTAAExperience">
                                         <li>Coordinated 5 alumni networking events and 3 campus job fairs, establishing a resource platform connecting alumni enterprises with students, attracting over 200 participants. </li>
                                     </ul>
                                 </div>
@@ -316,14 +317,14 @@
                                 <div class="s-about__experience-item">
                                     <h6 style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
         
-                                        <span style="color: #141414;">Saxophonist</span>
+                                        <span style="color: #141414;" data-key="aboutCSUFTASaxophonist">Saxophonist</span>
                                         
                                         <span style="display: flex; align-items: center; white-space: nowrap;">
                                             @ Student Art Association
                                         </span>
                                     </h6>
                                     <p><em>2018 - 2020</em></p>
-                                    <ul>
+                                    <ul data-key="aboutCSUFTASaxophonistExperience">
                                         <li>Performed in both ensemble and solo concerts on campus, demonstrating musical sensitivity, stage presence, and long-term dedication to the arts. </li>
                                     </ul>
                                 </div>
@@ -333,7 +334,7 @@
 
                 </div> <!--end column -->
                 <div class="column xl-12" >
-                    <h4 class="s-about__block-title" >Technical Skills</h4>
+                    <h4 class="s-about__block-title" data-key="aboutTechnical">Technical Skills</h4>
                     <div class="s-about__skill-list">
                         <div class="s-about__skill-category">
                             <h6>Coding</h6>
@@ -376,7 +377,7 @@
             <div class="row">
                 <div class="column xl-12">
                     <div class="section-header" data-num="02">
-                        <h2 class="text-display-title">My Works.</h2>
+                        <h2 class="text-display-title" data-key="worksTitle">My Works.</h2>
                     </div> </div>
             </div>
 
@@ -389,9 +390,9 @@
                                 <div class="slide-content">
                                     <img src="images/portfolio/VR/1.webp" class="slide-image" alt="Project 1 Image 1">
                                     <div class="entry__info">
-                                        <h4 class="entry__title">The Last Space Voyage</h4>
-                                        <div class="entry__cat" style="color: var(--color-1);">University project - VR Game development</div>
-                                        <div class="entry__cat" style="font-size: 18px; color: #fff;">Designed an immersive VR storytelling experience with four interactive scenes, incorporating passthrough, spatial navigation, haptic feedback, and environmental interaction. Contributed to environment design, interaction logic, and gameplay mechanics using Unity and Meta Quest 2.</div>
+                                        <h4 class="entry__title" data-key="works1Title">The Last Space Voyage</h4>
+                                        <div class="entry__cat" style="color: var(--color-1);"data-key="works1Cat">University project - VR Game development</div>
+                                        <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works1Desc">Designed an immersive VR storytelling experience with four interactive scenes, incorporating passthrough, spatial navigation, haptic feedback, and environmental interaction. Contributed to environment design, interaction logic, and gameplay mechanics using Unity and Meta Quest 2.</div>
                                     </div>
                                 </div>
                             </div>
@@ -399,9 +400,9 @@
                                 <div class="slide-content">
                                     <img src="images/portfolio/VR/2.webp" class="slide-image" alt="Project 1 Image 2">
                                     <div class="entry__info">
-                                        <h4 class="entry__title">The Last Space Voyage</h4>
-                                        <div class="entry__cat" style="color: var(--color-1);">University project - VR Game development</div>
-                                        <div class="entry__cat" style="font-size: 18px; color: #fff;">Designed an immersive VR storytelling experience with four interactive scenes, incorporating passthrough, spatial navigation, haptic feedback, and environmental interaction. Contributed to environment design, interaction logic, and gameplay mechanics using Unity and Meta Quest 2.</div>
+                                        <h4 class="entry__title" data-key="works1Title">The Last Space Voyage</h4>
+                                        <div class="entry__cat" style="color: var(--color-1);" data-key="works1Cat">University project - VR Game development</div>
+                                        <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works1Desc">Designed an immersive VR storytelling experience with four interactive scenes, incorporating passthrough, spatial navigation, haptic feedback, and environmental interaction. Contributed to environment design, interaction logic, and gameplay mechanics using Unity and Meta Quest 2.</div>
                                     </div>
                                 </div>
                             </div>
@@ -409,9 +410,9 @@
                                 <div class="slide-content">
                                     <img src="images/portfolio/VR/3.webp" class="slide-image" alt="Project 1 Image 3">
                                     <div class="entry__info">
-                                        <h4 class="entry__title">The Last Space Voyage</h4>
-                                        <div class="entry__cat" style="color: var(--color-1);">University project - VR Game development</div>
-                                        <div class="entry__cat" style="font-size: 18px; color: #fff;">Designed an immersive VR storytelling experience with four interactive scenes, incorporating passthrough, spatial navigation, haptic feedback, and environmental interaction. Contributed to environment design, interaction logic, and gameplay mechanics using Unity and Meta Quest 2.</div>
+                                        <h4 class="entry__title" data-key="works1Title">The Last Space Voyage</h4>
+                                        <div class="entry__cat" style="color: var(--color-1);" data-key="works1Cat">University project - VR Game development</div>
+                                        <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works1Desc">Designed an immersive VR storytelling experience with four interactive scenes, incorporating passthrough, spatial navigation, haptic feedback, and environmental interaction. Contributed to environment design, interaction logic, and gameplay mechanics using Unity and Meta Quest 2.</div>
                                     </div>
                                 </div>
                             </div>
@@ -419,9 +420,9 @@
                                 <div class="slide-content">
                                     <img src="images/portfolio/VR/4.webp" class="slide-image" alt="Project 1 Image 4">
                                     <div class="entry__info">
-                                        <h4 class="entry__title">The Last Space Voyage</h4>
-                                        <div class="entry__cat" style="color: var(--color-1);">University project - VR Game development</div>
-                                        <div class="entry__cat" style="font-size: 18px; color: #fff;">Designed an immersive VR storytelling experience with four interactive scenes, incorporating passthrough, spatial navigation, haptic feedback, and environmental interaction. Contributed to environment design, interaction logic, and gameplay mechanics using Unity and Meta Quest 2.</div>
+                                        <h4 class="entry__title" data-key="works1Title">The Last Space Voyage</h4>
+                                        <div class="entry__cat" style="color: var(--color-1);" data-key="works1Cat">University project - VR Game development</div>
+                                        <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works1Desc">Designed an immersive VR storytelling experience with four interactive scenes, incorporating passthrough, spatial navigation, haptic feedback, and environmental interaction. Contributed to environment design, interaction logic, and gameplay mechanics using Unity and Meta Quest 2.</div>
                                     </div>
                                 </div>
                             </div>
@@ -429,9 +430,9 @@
                                 <div class="slide-content">
                                     <img src="images/portfolio/VR/5.webp" class="slide-image" alt="Project 1 Image 5">
                                     <div class="entry__info">
-                                        <h4 class="entry__title">The Last Space Voyage</h4>
-                                        <div class="entry__cat" style="color: var(--color-1);">University project - VR Game development</div>
-                                        <div class="entry__cat" style="font-size: 18px; color: #fff;">Designed an immersive VR storytelling experience with four interactive scenes, incorporating passthrough, spatial navigation, haptic feedback, and environmental interaction. Contributed to environment design, interaction logic, and gameplay mechanics using Unity and Meta Quest 2.</div>
+                                        <h4 class="entry__title" data-key="works1Title">The Last Space Voyage</h4>
+                                        <div class="entry__cat" style="color: var(--color-1);" data-key="works1Cat">University project - VR Game development</div>
+                                        <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works1Desc">Designed an immersive VR storytelling experience with four interactive scenes, incorporating passthrough, spatial navigation, haptic feedback, and environmental interaction. Contributed to environment design, interaction logic, and gameplay mechanics using Unity and Meta Quest 2.</div>
                                     </div>
                                 </div>
                             </div>
@@ -439,16 +440,16 @@
                                 <div class="slide-content">
                                     <img src="images/portfolio/VR/6.webp" class="slide-image" alt="Project 1 Image 6">
                                     <div class="entry__info">
-                                        <h4 class="entry__title">The Last Space Voyage</h4>
-                                        <div class="entry__cat" style="color: var(--color-1);">University project - VR Game development</div>
-                                        <div class="entry__cat" style="font-size: 18px; color: #fff;">Designed an immersive VR storytelling experience with four interactive scenes, incorporating passthrough, spatial navigation, haptic feedback, and environmental interaction. Contributed to environment design, interaction logic, and gameplay mechanics using Unity and Meta Quest 2.</div>
+                                        <h4 class="entry__title" data-key="works1Title">The Last Space Voyage</h4>
+                                        <div class="entry__cat" style="color: var(--color-1);" data-key="works1Cat">University project - VR Game development</div>
+                                        <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works1Desc">Designed an immersive VR storytelling experience with four interactive scenes, incorporating passthrough, spatial navigation, haptic feedback, and environmental interaction. Contributed to environment design, interaction logic, and gameplay mechanics using Unity and Meta Quest 2.</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="folio-item folio-item--video-only">
                                     <div class="folio-item__video-container">
-                                        <iframe src="https://www.youtube.com/embed/k7ZByMZsLXI?si=HmyOI1cZc1jXER-N" title="Game Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe id="vr-video-iframe" src="https://www.youtube.com/embed/k7ZByMZsLXI?si=HmyOI1cZc1jXER-N" title="Game Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -468,9 +469,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HoneyMessenger/1.webp" class="slide-image" alt="Project 1 Image 1">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Honey Messenger</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Service Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
+                                    <h4 class="entry__title" data-key="works2Title">Honey Messenger</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works2Cat">UX/UI Service Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works2Desc">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
                                 </div>
                             </div>
                         </div>
@@ -478,9 +479,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HoneyMessenger/2.webp" class="slide-image" alt="Project 1 Image 2">
                                 <div class="entry__info">
-                                     <h4 class="entry__title">Honey Messenger</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Service Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
+                                     <h4 class="entry__title" data-key="works2Title">Honey Messenger</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works2Cat">UX/UI Service Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works2Desc">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
                                 </div>
                             </div>
                         </div>
@@ -488,9 +489,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HoneyMessenger/3.webp" class="slide-image" alt="Project 1 Image 3">
                                  <div class="entry__info">
-                                    <h4 class="entry__title">Honey Messenger</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Service Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
+                                    <h4 class="entry__title" data-key="works2Title">Honey Messenger</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works2Cat">UX/UI Service Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works2Desc">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
                                 </div>
                             </div>
                         </div>
@@ -498,9 +499,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HoneyMessenger/4.webp" class="slide-image" alt="Project 1 Image 4">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Honey Messenger</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Service Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
+                                    <h4 class="entry__title" data-key="works2Title">Honey Messenger</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works2Cat">UX/UI Service Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works2Desc">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
                                 </div>
                             </div>
                         </div>
@@ -508,9 +509,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HoneyMessenger/5.webp" class="slide-image" alt="Project 1 Image 5">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Honey Messenger</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Service Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
+                                    <h4 class="entry__title" data-key="works2Title">Honey Messenger</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works2Cat">UX/UI Service Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works2Desc">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
                                 </div>
                             </div>
                         </div>
@@ -518,9 +519,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HoneyMessenger/6.webp" class="slide-image" alt="Project 1 Image 6">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Honey Messenger</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Service Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
+                                    <h4 class="entry__title" data-key="works2Title">Honey Messenger</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works2Cat">UX/UI Service Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works2Desc">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
                                 </div>
                             </div>
                         </div>
@@ -528,9 +529,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HoneyMessenger/7.webp" class="slide-image" alt="Project 1 Image 7">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Honey Messenger</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Service Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
+                                    <h4 class="entry__title" data-key="works2Title">Honey Messenger</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works2Cat">UX/UI Service Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works2Desc">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
                                 </div>
                             </div>
                         </div>
@@ -538,9 +539,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HoneyMessenger/8.webp" class="slide-image" alt="Project 1 Image 8">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Honey Messenger</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Service Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
+                                    <h4 class="entry__title" data-key="works2Title">Honey Messenger</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works2Cat">UX/UI Service Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works2Desc">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
                                 </div>
                             </div>
                         </div>
@@ -548,9 +549,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HoneyMessenger/9.webp" class="slide-image" alt="Project 1 Image 9">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Honey Messenger</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Service Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
+                                    <h4 class="entry__title" data-key="works2Title">Honey Messenger</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works2Cat">UX/UI Service Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works2Desc">Built a honey traceability e-commerce platform using supply chain and user analysis. Designed a seller-buyer-platform model, integrated blockchain for transparency, and created the UI system with Illustrator to enhance trust in genuine honey.</div>
                                 </div>
                             </div>
                         </div>
@@ -568,9 +569,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/MR/1.webp" class="slide-image" alt="Project 2 Image 1">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Smake Treatment</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
+                                    <h4 class="entry__title" data-key="works3Title">Smake Treatment</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works3Cat">UX/UI/MR Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works3Desc">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
                                 </div>
                             </div>
                         </div>
@@ -578,9 +579,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/MR/2.webp" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                     <h4 class="entry__title">Smake Treatment</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
+                                     <h4 class="entry__title" data-key="works3Title">Smake Treatment</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works3Cat">UX/UI/MR Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works3Desc">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
                                 </div>
                             </div>
                         </div>
@@ -588,9 +589,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/MR/3.webp" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                     <h4 class="entry__title">Smake Treatment</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
+                                     <h4 class="entry__title" data-key="works3Title">Smake Treatment</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works3Cat">UX/UI/MR Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works3Desc">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
                                 </div>
                             </div>
                         </div>
@@ -598,9 +599,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/MR/4.webp" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                     <h4 class="entry__title">Smake Treatment</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
+                                     <h4 class="entry__title" data-key="works3Title">Smake Treatment</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works3Cat">UX/UI/MR Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works3Desc">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
                                 </div>
                             </div>
                         </div>
@@ -608,9 +609,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/MR/5.webp" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                     <h4 class="entry__title">Smake Treatment</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
+                                     <h4 class="entry__title" data-key="works3Title">Smake Treatment </h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works3Cat">UX/UI/MR Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works3Desc">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
                                 </div>
                             </div>
                         </div>
@@ -618,9 +619,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/MR/6.webp" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                     <h4 class="entry__title">Smake Treatment</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
+                                     <h4 class="entry__title" data-key="works3Title">Smake Treatment</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works3Cat">UX/UI/MR Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works3Desc">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
                                 </div>
                             </div>
                         </div>
@@ -628,9 +629,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/MR/7.webp" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                     <h4 class="entry__title">Smake Treatment</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
+                                     <h4 class="entry__title" data-key="works3Title">Smake Treatment</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works3Cat">UX/UI/MR Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works3Desc">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
                                 </div>
                             </div>
                         </div>
@@ -638,9 +639,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/MR/8.webp" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                     <h4 class="entry__title">Smake Treatment</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
+                                     <h4 class="entry__title" data-key="works3Title">Smake Treatment</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works3Cat">UX/UI/MR Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works3Desc">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
                                 </div>
                             </div>
                         </div>  
@@ -648,9 +649,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/MR/9.webp" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                     <h4 class="entry__title">Smake Treatment</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
+                                     <h4 class="entry__title" data-key="works3Title">Smake Treatment</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works3Cat">UX/UI/MR Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works3Desc">Design an integrated system for phased addiction cessation (smoking, shopping, drinking) based on user research; use MR glasses and an app for environment recognition, pet reminders, and support groups; render scenes in Blender and prototype with Figma.</div>
                                 </div>
                             </div>  
                         </div>
@@ -667,9 +668,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/NumblePark/1.png" class="slide-image" alt="Project 2 Image 1">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Numble Park</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI/MR Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
+                                    <h4 class="entry__title" data-key="works4Title">Numble Park</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works4Cat">UX/UI/Product Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works4Desc">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
                                 </div>
                             </div>
                         </div>
@@ -677,9 +678,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/NumblePark/2.png" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Numble Park</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
+                                    <h4 class="entry__title" data-key="works4Title">Numble Park</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works4Cat">UX/UI/Product Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works4Desc">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
                                 </div>
                             </div>
                         </div>
@@ -687,9 +688,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/NumblePark/3.png" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Numble Park</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
+                                    <h4 class="entry__title" data-key="works4Title">Numble Park</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works4Cat">UX/UI/Product Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works4Desc">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
                                 </div>
                             </div>
                         </div>
@@ -697,9 +698,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/NumblePark/4.png" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Numble Park</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
+                                    <h4 class="entry__title" data-key="works4Title">Numble Park</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works4Cat">UX/UI/Product Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works4Desc">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
                                 </div>
                             </div>
                         </div>
@@ -707,9 +708,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/NumblePark/5.png" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Numble Park</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
+                                    <h4 class="entry__title" data-key="works4Title">Numble Park</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works4Cat">UX/UI/Product Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works4Desc">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
                                 </div>
                             </div>
                         </div>
@@ -717,9 +718,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/NumblePark/6.png" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Numble Park</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
+                                    <h4 class="entry__title" data-key="works4Title">Numble Park</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works4Cat">UX/UI/Product Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works4Desc">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
                                 </div>
                             </div>
                         </div>
@@ -727,9 +728,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/NumblePark/7.png" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Numble Park</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
+                                    <h4 class="entry__title" data-key="works4Title">Numble Park</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works4Cat">UX/UI/Product Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works4Desc">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
                                 </div>
                             </div>
                         </div>
@@ -737,9 +738,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/NumblePark/8.png" class="slide-image" alt="Project 2 Image 2">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">Numble Park</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Product Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
+                                    <h4 class="entry__title" data-key="works4Title">Numble Park</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works4Cat">UX/UI/Product Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works4Desc">Design a scent bracelet, speaker booth, and navigation system for urban workers lacking nature perception, guiding them to immersive green spaces; use Figma for app prototypes, Keyshot for rendering, and Lumion with Photoshop for scenes.</div>
                                 </div>
                             </div>
                         </div>
@@ -756,9 +757,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HMI/1.webp" class="slide-image" alt="Project 2 Image 1">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">HMI</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
+                                    <h4 class="entry__title" data-key="works5Title">Driving Copilot</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works5Cat">UX/UI Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works5Desc">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
                                 </div>
                             </div>
                         </div>
@@ -766,9 +767,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HMI/2.webp" class="slide-image" alt="Project 2 Image 1">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">HMI</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
+                                    <h4 class="entry__title" data-key="works5Title">Driving Copilot</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works5Cat">UX/UI Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works5Desc">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
                                 </div>
                             </div>
                         </div>
@@ -776,9 +777,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HMI/3.webp" class="slide-image" alt="Project 2 Image 1">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">HMI</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
+                                    <h4 class="entry__title" data-key="works5Title">Driving Copilot</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works5Cat">UX/UI Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works5Desc">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
                                 </div>
                             </div>
                         </div>
@@ -786,9 +787,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HMI/4.webp" class="slide-image" alt="Project 2 Image 1">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">HMI</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
+                                    <h4 class="entry__title" data-key="works5Title">Driving Copilot</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works5Cat">UX/UI Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works5Desc">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
                                 </div>
                             </div>
                         </div>
@@ -796,9 +797,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HMI/5.webp" class="slide-image" alt="Project 2 Image 1">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">HMI</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
+                                    <h4 class="entry__title" data-key="works5Title">Driving Copilot</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works5Cat">UX/UI Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works5Desc">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
                                 </div>
                             </div>
                         </div>
@@ -806,9 +807,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HMI/6.webp" class="slide-image" alt="Project 2 Image 1">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">HMI</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
+                                    <h4 class="entry__title" data-key="works5Title">Driving Copilot</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works5Cat">UX/UI Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works5Desc">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
                                 </div>
                             </div>
                         </div>
@@ -816,9 +817,9 @@
                             <div class="slide-content">
                                 <img src="images/portfolio/HMI/7.webp" class="slide-image" alt="Project 2 Image 1">
                                 <div class="entry__info">
-                                    <h4 class="entry__title">HMI</h4>
-                                    <div class="entry__cat" style="color: var(--color-1);">UX/UI Design</div>
-                                    <div class="entry__cat" style="font-size: 18px; color: #fff;">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
+                                    <h4 class="entry__title" data-key="works5Title">Driving Copilot</h4>
+                                    <div class="entry__cat" style="color: var(--color-1);" data-key="works5Cat">UX/UI Design</div>
+                                    <div class="entry__cat" style="font-size: 18px; color: #fff;" data-key="works5Desc">Design a driving system for young drivers to boost safe decision-making, tackling low risk perception and high load with training, alerts, and AI; create a gamified hazard-based system and fuse vision and radar for planning and intervention.</div>
                                 </div>
                             </div>
                         </div>
@@ -840,7 +841,7 @@
             <div class="row">
                 <div class="column lg-12">
                     <div class="section-header light-on-dark" data-num="03">
-                        <h2 class="text-display-title">Get In Touch.</h2>
+                        <h2 class="text-display-title" data-key="footerTitle">Get In Touch.</h2>
                     </div> <!-- end section-header -->
                 </div>
             </div>
@@ -848,7 +849,7 @@
             <div class="row s-footer__content">
 
                 <div class="column xl-6 md-12 s-footer__block s-footer__about">                    
-                    <p class="attention-getter">
+                    <p class="attention-getter" data-key="footerDesc">
                         I am dedicated to creating impactful user experiences in Virtual Reality, Augmented Reality, and intelligent Human-Machine Interaction (HMI). I am passionate about tackling complex design challenges and transforming research insights into intuitive, elegant solutions. I am currently seeking full-time or internship opportunities where I can contribute my enthusiasm and skills to your team. If you feel my background aligns with your needs, please do not hesitate to get in touch.
                     </p>               
                 </div> <!-- end section-footer__about -->
@@ -856,7 +857,7 @@
                 <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
                     <div class="row">
                         <div class="column xl-6 md-6 tab-12">
-                            <h5>Contact Me</h5>
+                            <h5 data-key="footerContact">Contact Me</h5>
                             <ul class="link-list">
                                 <li><a href="mailto:#0">liu591127600@126.com</a></li>
                                 <li><a href="tel:+8615389660347">+86 15389660347</a></li>
@@ -872,11 +873,11 @@
             <div class="row s-footer__buttons">
                
                 <div class="column xl-6 tab-12">
-                    <a href="mailto:#0" class="btn btn--primary btn--large u-fullwidth">Message Me</a>
+                    <a href="mailto:#0" class="btn btn--primary btn--large u-fullwidth" data-key="footerMessage">Message Me</a>
                 </div>
           
                 <div class="column xl-6 tab-12">                    
-                    <a href="/Files/Kevin-CV-VR.pdf" class="btn btn--stroke btn--large u-fullwidth">Get My CV</a>
+                    <a id="cv-download-link-footer" href="/Files/Kevin-CV-VR.pdf" class="btn btn--stroke btn--large u-fullwidth" data-key="footerCV">Get My CV</a>
                 </div>
             
             </div> <!-- end section-footer__buttons -->              
@@ -944,5 +945,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+    <script src="js/translations.js"></script>
+    <script src="js/translator.js"></script>
 </body>
 </html>
