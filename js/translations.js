@@ -74,7 +74,7 @@ const translations = {
       footerCV: "Get My CV",
       // ... add ALL other keys here
       attributes: {
-        cvLink: "Files/Kevin-CV-VR.pdf",
+        cvLink: "Files/Kevin-CV-V2.pdf",
         vrVideoLink: "https://www.youtube.com/embed/k7ZByMZsLXI?si=HmyOI1cZc1jXER-N"
       }
 
