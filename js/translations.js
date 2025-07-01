@@ -72,6 +72,7 @@ const translations = {
       footerContact: "Contact Me",
       footerMessage: "Message Me",
       footerCV: "Get My CV",
+      footerEmail: "liu.kevin.au@gmail.com",
       // ... add ALL other keys here
       attributes: {
         cvLink: "Files/Kevin-CV-V2.pdf",
@@ -150,6 +151,7 @@ const translations = {
       footerContact: "联系方式",
       footerMessage: "给我留言",
       footerCV: "下载简历",
+      footerEmail: "liu591127600@126.com",
       // ... add ALL other keys here
       attributes: {
         cvLink: "/Files/刘沁隆-V2CV.pdf", 
