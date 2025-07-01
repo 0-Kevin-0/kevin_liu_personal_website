@@ -73,10 +73,13 @@ const translations = {
       footerMessage: "Message Me",
       footerCV: "Get My CV",
       footerEmail: "liu.kevin.au@gmail.com",
+      footerPhone: "+61 424689772",
       // ... add ALL other keys here
       attributes: {
         cvLink: "Files/Kevin-CV-V2.pdf",
-        vrVideoLink: "https://www.youtube.com/embed/k7ZByMZsLXI?si=HmyOI1cZc1jXER-N"
+        vrVideoLink: "https://www.youtube.com/embed/k7ZByMZsLXI?si=HmyOI1cZc1jXER-N",
+        emailHref: "mailto:liu.kevin.au@gmail.com",
+        phoneHref: "tel:+61424689772"
       }
 
     },
@@ -152,10 +155,13 @@ const translations = {
       footerMessage: "给我留言",
       footerCV: "下载简历",
       footerEmail: "liu591127600@126.com",
+      footerPhone: "+86 15389660347",
       // ... add ALL other keys here
       attributes: {
         cvLink: "/Files/刘沁隆-V2CV.pdf", 
-        vrVideoLink: "https://player.bilibili.com/player.html?isOutside=true&aid=114629506302035&bvid=BV1S9TxzoEbZ&cid=30330913466&p=1&autoplay=0" 
+        vrVideoLink: "https://player.bilibili.com/player.html?isOutside=true&aid=114629506302035&bvid=BV1S9TxzoEbZ&cid=30330913466&p=1&autoplay=0" ,
+        emailHref: "mailto:liu591127600@126.com",
+        phoneHref: "tel:+8615389660347"
       }
     }
   };

@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const attributes = translations[language].attributes;
     if (attributes) {
-      // 更新简历下载链接 (两处)
       const cvLinkIntro = document.getElementById('cv-download-link-intro');
       if (cvLinkIntro && attributes.cvLink) {
         cvLinkIntro.setAttribute('href', attributes.cvLink);
@@ -24,14 +23,24 @@ document.addEventListener('DOMContentLoaded', () => {
         cvLinkFooter.setAttribute('href', attributes.cvLink);
       }
   
-      // 更新VR游戏视频链接 (iframe的src)
+
       const vrVideoIframes = document.querySelectorAll('.vr-video-iframe');
-      // 遍历找到的所有 iframe 元素
+
       if (vrVideoIframes.length > 0 && attributes.vrVideoLink) {
           vrVideoIframes.forEach(iframe => {
-              // 为每一个 iframe 更新 src 链接
+
               iframe.setAttribute('src', attributes.vrVideoLink);
           });
+      }
+
+      const emailLink = document.getElementById('email-link');
+      if (emailLink && attributes.emailHref) {
+        emailLink.setAttribute('href', attributes.emailHref);
+      }
+
+      const phoneLink = document.getElementById('phone-link');
+      if (phoneLink && attributes.phoneHref) {
+        phoneLink.setAttribute('href', attributes.phoneHref);
       }
     }
   };
