@@ -191,6 +191,9 @@
             nextEl: '#project-1-swiper .swiper-button-next',
             prevEl: '#project-1-swiper .swiper-button-prev',
         },
+        lazy: {
+            loadPrevNext: true, 
+        },
     });
 
     // Initialize Swiper for Project 2
@@ -204,6 +207,10 @@
             nextEl: '#project-2-swiper .swiper-button-next',
             prevEl: '#project-2-swiper .swiper-button-prev',
         },
+        lazy: {
+            loadPrevNext: true, 
+        },
+
     });
 
     // Initialize Swiper for Project 3
@@ -216,6 +223,9 @@
         navigation: {
             nextEl: '#project-3-swiper .swiper-button-next',
             prevEl: '#project-3-swiper .swiper-button-prev',
+        },
+        lazy: {
+            loadPrevNext: true, 
         },
     });
     
@@ -230,6 +240,9 @@
             nextEl: '#project-4-swiper .swiper-button-next',
             prevEl: '#project-4-swiper .swiper-button-prev',
         },
+        lazy: {
+            loadPrevNext: true, 
+        },
     });
 
     // Initialize Swiper for Project 5
@@ -242,6 +255,9 @@
         navigation: {
             nextEl: '#project-5-swiper .swiper-button-next',
             prevEl: '#project-5-swiper .swiper-button-prev',
+        },
+        lazy: {
+            loadPrevNext: true, 
         },
     });
 
