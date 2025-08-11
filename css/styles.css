@@ -3757,9 +3757,9 @@ td:last-child {
         color    : white;
     }
 
-    .s-intro__content-title br {
+    /* .s-intro__content-title br {
         display: none;
-    }
+    } */
 
     .s-intro__content-btns {
         --color-btn                  : white;
