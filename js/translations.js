@@ -9,7 +9,7 @@ const translations = {
       navWorks: "Works",
       navContact: "Contact",
       introPreTitle: "Hello",
-      introTitle: "I'm Kevin Liu <br> a HCI Designer <br> based in Sydney.",
+      introTitle: "I'm Kevin Liu <br> an HCI Designer <br> based in Sydney.",
       introBtnMore: "More About Me",
       introBtnContact: "Get In Touch",
       BtnDownloadCV: "Get My CV",
