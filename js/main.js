@@ -117,41 +117,41 @@
 
    /* highlight active menu link on pagescroll
     * ------------------------------------------------------ */
-    const ssScrollSpy = function() {
+    // const ssScrollSpy = function() {
 
-        const sections = document.querySelectorAll('.target-section');
-        if (!sections) return;
+    //     const sections = document.querySelectorAll('.target-section');
+    //     if (!sections) return;
 
-        // Add an event listener listening for scroll
-        window.addEventListener('scroll', navHighlight);
+    //     // Add an event listener listening for scroll
+    //     window.addEventListener('scroll', navHighlight);
 
-        function navHighlight() {
+    //     function navHighlight() {
         
-            // Get current scroll position
-            let scrollY = window.pageYOffset;
+    //         // Get current scroll position
+    //         let scrollY = window.pageYOffset;
         
-            // Loop through sections to get height(including padding and border), 
-            // top and ID values for each
-            sections.forEach(function(current) {
-                const sectionHeight = current.offsetHeight;
-                const sectionTop = current.offsetTop - 50;
-                const sectionId = current.getAttribute('id');
+    //         // Loop through sections to get height(including padding and border), 
+    //         // top and ID values for each
+    //         sections.forEach(function(current) {
+    //             const sectionHeight = current.offsetHeight;
+    //             const sectionTop = current.offsetTop - 50;
+    //             const sectionId = current.getAttribute('id');
             
-               /* If our current scroll position enters the space where current section 
-                * on screen is, add .current class to parent element(li) of the thecorresponding 
-                * navigation link, else remove it. To know which link is active, we use 
-                * sectionId variable we are getting while looping through sections as 
-                * an selector
-                */
-                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                    document.querySelector('.s-header__nav a[href*=' + sectionId + ']').parentNode.classList.add('current');
-                } else {
-                    document.querySelector('.s-header__nav a[href*=' + sectionId + ']').parentNode.classList.remove('current');
-                }
-            });
-        }
+    //            /* If our current scroll position enters the space where current section 
+    //             * on screen is, add .current class to parent element(li) of the thecorresponding 
+    //             * navigation link, else remove it. To know which link is active, we use 
+    //             * sectionId variable we are getting while looping through sections as 
+    //             * an selector
+    //             */
+    //             if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+    //                 document.querySelector('.s-header__nav a[href*=' + sectionId + ']').parentNode.classList.add('current');
+    //             } else {
+    //                 document.querySelector('.s-header__nav a[href*=' + sectionId + ']').parentNode.classList.remove('current');
+    //             }
+    //         });
+    //     }
 
-    }; // end ssScrollSpy
+    // }; // end ssScrollSpy
 
 
    /* glightbox
@@ -181,87 +181,50 @@
     // --- NEW INITIALIZATION FOR PROJECT GALLERIES ---
 
     // Initialize Swiper for Project 1
-    const swiper1 = new Swiper('#project-1-swiper', {
-        loop: true,
-        pagination: {
-            el: '#project-1-swiper .swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '#project-1-swiper .swiper-button-next',
-            prevEl: '#project-1-swiper .swiper-button-prev',
-        },
-        lazy: {
-            loadPrevNext: true, 
-        },
-    });
+    if (document.querySelector('#project-1-swiper')) {
+        const swiper1 = new Swiper('#project-1-swiper', {
+            loop: true,
+            pagination: { el: '#project-1-swiper .swiper-pagination', clickable: true },
+            navigation: { nextEl: '#project-1-swiper .swiper-button-next', prevEl: '#project-1-swiper .swiper-button-prev' },
+            lazy: { loadPrevNext: true }
+        });
+    }
 
-    // Initialize Swiper for Project 2
-    const swiper2 = new Swiper('#project-2-swiper', {
-        loop: true,
-        pagination: {
-            el: '#project-2-swiper .swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '#project-2-swiper .swiper-button-next',
-            prevEl: '#project-2-swiper .swiper-button-prev',
-        },
-        lazy: {
-            loadPrevNext: true, 
-        },
+    if (document.querySelector('#project-2-swiper')) {
+        const swiper2 = new Swiper('#project-2-swiper', {
+            loop: true,
+            pagination: { el: '#project-2-swiper .swiper-pagination', clickable: true },
+            navigation: { nextEl: '#project-2-swiper .swiper-button-next', prevEl: '#project-2-swiper .swiper-button-prev' },
+            lazy: { loadPrevNext: true }
+        });
+    }
 
-    });
-
-    // Initialize Swiper for Project 3
-    const swiper3 = new Swiper('#project-3-swiper', {
-        loop: true,
-        pagination: {
-            el: '#project-3-swiper .swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '#project-3-swiper .swiper-button-next',
-            prevEl: '#project-3-swiper .swiper-button-prev',
-        },
-        lazy: {
-            loadPrevNext: true, 
-        },
-    });
+    if (document.querySelector('#project-3-swiper')) {
+        const swiper3 = new Swiper('#project-3-swiper', {
+            loop: true,
+            pagination: { el: '#project-3-swiper .swiper-pagination', clickable: true },
+            navigation: { nextEl: '#project-3-swiper .swiper-button-next', prevEl: '#project-3-swiper .swiper-button-prev' },
+            lazy: { loadPrevNext: true }
+        });
+    }
     
-    // Initialize Swiper for Project 4
-    const swiper4 = new Swiper('#project-4-swiper', {
-        loop: true,
-        pagination: {
-            el: '#project-4-swiper .swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '#project-4-swiper .swiper-button-next',
-            prevEl: '#project-4-swiper .swiper-button-prev',
-        },
-        lazy: {
-            loadPrevNext: true, 
-        },
-    });
+    if (document.querySelector('#project-4-swiper')) {
+        const swiper4 = new Swiper('#project-4-swiper', {
+            loop: true,
+            pagination: { el: '#project-4-swiper .swiper-pagination', clickable: true },
+            navigation: { nextEl: '#project-4-swiper .swiper-button-next', prevEl: '#project-4-swiper .swiper-button-prev' },
+            lazy: { loadPrevNext: true }
+        });
+    }
 
-    // Initialize Swiper for Project 5
-    const swiper5 = new Swiper('#project-5-swiper', {
-        loop: true,
-        pagination: {
-            el: '#project-5-swiper .swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '#project-5-swiper .swiper-button-next',
-            prevEl: '#project-5-swiper .swiper-button-prev',
-        },
-        lazy: {
-            loadPrevNext: true, 
-        },
-    });
-
-
+    if (document.querySelector('#project-5-swiper')) {
+        const swiper5 = new Swiper('#project-5-swiper', {
+            loop: true,
+            pagination: { el: '#project-5-swiper .swiper-pagination', clickable: true },
+            navigation: { nextEl: '#project-5-swiper .swiper-button-next', prevEl: '#project-5-swiper .swiper-button-prev' },
+            lazy: { loadPrevNext: true }
+        });
+    }
 }; // end ssSwiper
 
 
@@ -361,10 +324,11 @@
         ssPreloader();
         ssMoveHeader();
         ssMobileMenu();
-        ssScrollSpy();
+        // ssScrollSpy();
         ssGLightbox();
         ssSwiper();
         ssAlertBoxes();
+        ssBackToTop();
         ssMoveTo();
 
     })();
