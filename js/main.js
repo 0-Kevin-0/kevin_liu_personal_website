@@ -317,6 +317,67 @@
     }; // end ssMoveTo
 
 
+    const ssProjectFilter = function() {
+
+        const filterNav = document.querySelector('.project-filter-nav');
+        if (!filterNav) return;
+
+        const filterButtons = filterNav.querySelectorAll('button');
+        const glider = filterNav.querySelector('.glider');
+        const projectItems = document.querySelectorAll('.work-gallery-container');
+        const firstActiveButton = filterNav.querySelector('button.active');
+
+        // [ 新增代码开始 ]
+        // 页面加载时立即执行一次筛选，只显示默认激活分类的项目
+        if (firstActiveButton) {
+            const initialFilter = firstActiveButton.getAttribute('data-filter');
+            projectItems.forEach(item => {
+                if (item.getAttribute('data-category') !== initialFilter) {
+                    item.classList.add('is-hidden');
+                    item.style.display = 'none';
+                }
+            });
+        // [ 新增代码结束 ]
+
+            // 设置滑块初始位置
+            glider.style.width = `${firstActiveButton.offsetWidth}px`;
+        }
+
+        // 按钮点击事件 (这部分逻辑保持不变)
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const filterValue = this.getAttribute('data-filter');
+
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+
+                glider.style.left = `${this.offsetLeft}px`;
+                glider.style.width = `${this.offsetWidth}px`;
+
+                projectItems.forEach(item => {
+                    const category = item.getAttribute('data-category');
+                    
+                    // 因为没有 "all" 按钮了，这个逻辑会自动处理分类筛选
+                    const matchesFilter = filterValue === category;
+                    
+                    if (matchesFilter) {
+                        item.classList.remove('is-hidden');
+                        item.style.display = 'block';
+                    } else {
+                        item.classList.add('is-hidden');
+                        setTimeout(() => {
+                           if (item.classList.contains('is-hidden')) {
+                               item.style.display = 'none';
+                           }
+                        }, 400);
+                    }
+                });
+            });
+        });
+
+    }; // end ssProjectFilter
+
    /* Initialize
     * ------------------------------------------------------ */
     (function ssInit() {
@@ -330,6 +391,7 @@
         ssAlertBoxes();
         ssBackToTop();
         ssMoveTo();
+        ssProjectFilter();
 
     })();
 

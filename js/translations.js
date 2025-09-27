@@ -78,7 +78,7 @@ const translations = {
       // ... add ALL other keys here
       attributes: {
         cvLink: "Files/Kevin-CV-V2.pdf",
-        vrVideoLink: "https://www.youtube.com/embed/k7ZByMZsLXI?si=HmyOI1cZc1jXER-N",
+        vrVideoLink: "https://www.youtube.com/embed/k7ZByMZsLXI?si=QtWGgwGkWxmY-x4V",
         emailHref: "mailto:liu.kevin.au@gmail.com",
         phoneHref: "tel:+61424689772"
       }
